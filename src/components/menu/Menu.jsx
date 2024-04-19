@@ -10,7 +10,7 @@ export default function Menu({color = "text-white"}) {
     return (
         <div className="relative z-10">
             <div className='flex justify-between py-5 px-10 items-center'>
-                <h1 className={`text-2xl font-bold ${color} uppercase`}><span className='text-purple-400'>lilac</span>dreamers</h1>
+                <h1 className={`text-2xl md:text-3xl font-bold ${color} uppercase`}><span className='text-purple-400'>lilac</span>dreamers</h1>
                 <button onClick={toggleMenu} className={`${color}`}>
                     <svg className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -20,7 +20,7 @@ export default function Menu({color = "text-white"}) {
             {isOpen && (
                 <div className="fixed bg-white inset-0 overflow-hidden">
                     <div className='flex justify-between py-5 px-10 items-center'>
-                        <h1 className='text-2xl font-bold uppercase'><span className='text-purple-400'>lilac</span>dreamers</h1>
+                        <h1 className='text-2xl md:text-3xl font-bold uppercase'><span className='text-purple-400'>lilac</span>dreamers</h1>
                         <button onClick={toggleMenu} className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600">
                             <svg fill="#000000" className='h-16 w-16' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                                 viewBox="0 0 460.775 460.775" xml:space="preserve">
@@ -36,7 +36,7 @@ export default function Menu({color = "text-white"}) {
                     <div className='flex justify-center items-center h-[80vh] mx-auto'>
                         <div className='flex flex-col space-y-2'>
                             <a href="/" className='text-5xl font-bold tracking-tight animate-fade-down'>Inicio</a>
-                            <a href="/perfil/" className='text-5xl font-bold tracking-tight animate-fade-down'>Miembros</a>
+                            <a href="/miembros/" className='text-5xl font-bold tracking-tight animate-fade-down'>Miembros</a>
                             <a href="/galeria/" className='text-5xl font-bold tracking-tight animate-fade-down'>Galeria</a>
                             <a href="/unete/" className='text-5xl font-bold tracking-tight animate-fade-down'>Unete</a>
                             <a href="/contacto/" className='text-5xl font-bold tracking-tight animate-fade-down'>Contacto</a>

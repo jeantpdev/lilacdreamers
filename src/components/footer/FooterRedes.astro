@@ -1,7 +1,10 @@
 ---
 const { color = "text-white" } = Astro.props;
+const currentPage = Astro.url.pathname
+
 ---
-<div class='flex fixed flex-col align-bottom gap-y-3 justify-end items-center mx-10 mb-5 bottom-1'>
+
+<div class={`flex fixed flex-col align-bottom gap-y-3 justify-end items-center mx-10 mb-5 bottom-1 ${currentPage === "/" ? "flex" : "hidden sm:flex"}`}>
     <a target="_blank" href="https://www.instagram.com/lilacdreamerss/"><i class=`${color} text-2xl fa-brands fa-instagram`></i></a>
     <a target="_blank" href="https://www.youtube.com/@lilacdreamers"><i class=`${color} text-2xl fa-brands fa-youtube`></i></a>
     <a target="_blank" href="#"><i class=`${color} text-2xl fa-brands fa-x-twitter`></i></a>
