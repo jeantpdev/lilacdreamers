@@ -33,7 +33,7 @@ export default function Menu({color = "text-white"}) {
                             </svg>
                         </button>
                     </div>
-                    <div className='flex justify-center items-center h-[80vh] mx-auto'>
+                    <div className='flex justify-center mt-36 md:mt-0 h-[80vh] mx-auto md:items-center'>
                         <div className='flex flex-col space-y-2'>
                             <a href="/" className='text-5xl font-bold tracking-tight animate-fade-down'>Inicio</a>
                             <a href="/miembros/" className='text-5xl font-bold tracking-tight animate-fade-down'>Miembros</a>
