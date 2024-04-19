@@ -1,0 +1,35 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import Menu from '@/components/menu/Menu';
+import FooterRedes from '@/components/footer/FooterRedes.astro';
+
+interface Props {
+	title: string;
+	textColor: string;
+	bgColor: string;
+
+}
+
+const { title, textColor = "text-white", bgColor = "bg-zinc-900" } = Astro.props;
+const currentPage = Astro.url.pathname
+
+console.log(currentPage)
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body class={bgColor}>
+        <Menu client:load color = {textColor}/>
+		<FooterRedes color = {textColor}/>
+		<slot />
+	</body>
+</html>
