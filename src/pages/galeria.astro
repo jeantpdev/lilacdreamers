@@ -1,5 +1,15 @@
 ---
 import ImagenGaleria from '@/components/componentes-galeria/imagen-galeria.astro';
+
+import imagen1 from '../assets/imagen-1.webp';
+import imagen2 from '../assets/imagen-2.webp';
+import imagen3 from '../assets/imagen-3.webp';
+import imagen4 from '../assets/imagen-4.webp';
+import imagen5 from '../assets/imagen-5.webp';
+import imagen6 from '../assets/imagen-6.webp';
+import imagen7 from '../assets/imagen-7.webp';
+import imagen8 from '../assets/imagen-8.webp';
+
 import Layout from '../layouts/Layout.astro';
 
 const title = "Galeria"
@@ -7,47 +17,21 @@ const title = "Galeria"
 
 <Layout title = {title} textColor = "text-white" bgColor= "bg-zinc-900">
     
-<div class="max-w-7xl mx-auto px-10 md:px-28 lg:px-20">
+<div class="max-w-7xl mx-auto px-10 md:px-28 lg:max-w-screen-2xl">
     <div class="my-5 text-center">
         <h1 class="text-5xl md:text-7xl font-bold text-purple-400">GALERIA</h1>
     </div>
 
-
-    <div class="grid md:grid-cols-2 gap-4 items-center">
-
-            <div>
-                <ImagenGaleria imgLink = "/galeria/imagen-1.webp" alt="lilacdreamers-imagen-galeria" />
-            </div>
-
-            <div>
-                <ImagenGaleria imgLink = "/galeria/imagen-2.webp" alt="lilacdreamers-imagen-galeria" />
-            </div>
-
-            <div>
-                <ImagenGaleria imgLink = "/galeria/imagen-3.webp" alt="lilacdreamers-imagen-galeria" />
-            </div>
-            
-            <div>
-                <ImagenGaleria imgLink = "/galeria/imagen-4.webp" alt="lilacdreamers-imagen-galeria" />
-            </div>
-
-            <div>
-                <ImagenGaleria imgLink = "/galeria/imagen-5.webp" alt="lilacdreamers-imagen-galeria" />
-            </div>
-
-            <div>
-                <ImagenGaleria imgLink = "/galeria/imagen-6.webp" alt="lilacdreamers-imagen-galeria" />
-            </div>
-
-            <div>
-                <ImagenGaleria imgLink = "/galeria/imagen-7.webp" alt="lilacdreamers-imagen-galeria" />
-            </div>
-
-            <div>
-                <ImagenGaleria imgLink = "/galeria/imagen-8.webp" alt="lilacdreamers-imagen-galeria" />
-            </div>
-
-
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
+        <ImagenGaleria imgLink = { imagen1 } alt="lilacdreamers-imagen-galeria" />
+        <ImagenGaleria imgLink = { imagen2 } alt="lilacdreamers-imagen-galeria" />
+        <ImagenGaleria imgLink = { imagen3 } alt="lilacdreamers-imagen-galeria" />
+        <ImagenGaleria imgLink = { imagen4 } alt="lilacdreamers-imagen-galeria" />
+        <ImagenGaleria imgLink = { imagen5 } alt="lilacdreamers-imagen-galeria" />
+        <ImagenGaleria imgLink = { imagen6 } alt="lilacdreamers-imagen-galeria" />
+        <ImagenGaleria imgLink = { imagen7 } alt="lilacdreamers-imagen-galeria" />
+        <ImagenGaleria imgLink = { imagen8 } alt="lilacdreamers-imagen-galeria" />
+        
     </div>
 </div>
 
