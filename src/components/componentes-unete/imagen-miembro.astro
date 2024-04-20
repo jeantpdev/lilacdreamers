@@ -3,5 +3,20 @@ const { imgLink } = Astro.props
 ---
 
 <div class="max-w-sm mx-auto">
-    <img src= {imgLink} alt = "lilacdreamrs - mimebro" class="h-[200px] md:h-[300px] lg:h-[500px] object-cover rounded" />
+    <img src= {imgLink} alt = "lilacdreamrs - miembro" class="h-[200px] md:h-[300px] lg:h-[500px] object-cover rounded" />
 </div>
+
+<style>
+    img {
+        transition: 0.5s ease;
+        mask-image: linear-gradient(black 70%, transparent);
+    }
+
+    img:hover{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 1s ease;
+        z-index: 99;
+    }
+</style>

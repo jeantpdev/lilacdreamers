@@ -1,4 +1,5 @@
 ---
+import ImagenGaleria from '@/components/componentes-galeria/imagen-galeria.astro';
 import Layout from '../layouts/Layout.astro';
 
 const title = "Galeria"
@@ -11,51 +12,42 @@ const title = "Galeria"
         <h1 class="text-5xl md:text-7xl font-bold text-purple-400">GALERIA</h1>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
-        <div class="grid gap-4">
+
+    <div class="grid md:grid-cols-2 gap-4 items-center">
+
             <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+                <ImagenGaleria imgLink = "/galeria/imagen-1.webp" alt="lilacdreamers-imagen-galeria" />
             </div>
+
             <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+                <ImagenGaleria imgLink = "/galeria/imagen-2.webp" alt="lilacdreamers-imagen-galeria" />
             </div>
+
             <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+                <ImagenGaleria imgLink = "/galeria/imagen-3.webp" alt="lilacdreamers-imagen-galeria" />
             </div>
-        </div>
-        <div class="grid gap-4">
+            
             <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+                <ImagenGaleria imgLink = "/galeria/imagen-4.webp" alt="lilacdreamers-imagen-galeria" />
             </div>
+
             <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+                <ImagenGaleria imgLink = "/galeria/imagen-5.webp" alt="lilacdreamers-imagen-galeria" />
             </div>
+
             <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+                <ImagenGaleria imgLink = "/galeria/imagen-6.webp" alt="lilacdreamers-imagen-galeria" />
             </div>
-        </div>
-        <div class="grid gap-4">
+
             <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                <ImagenGaleria imgLink = "/galeria/imagen-7.webp" alt="lilacdreamers-imagen-galeria" />
             </div>
+
             <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+                <ImagenGaleria imgLink = "/galeria/imagen-8.webp" alt="lilacdreamers-imagen-galeria" />
             </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-            </div>
-        </div>
-        <div class="grid gap-4">
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-            </div>
-        </div>
+
+
     </div>
 </div>
 

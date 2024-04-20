@@ -12,22 +12,60 @@ const title = "Unete"
             <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold text-white"><span class="text-purple-400">LILAC</span>DREAMERS</h2>
         </div>
 
-        <div class="text-center order-3 md:order-2">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJ0EbWeBrFwKSHB_o08n5cAuJvxaV3d4OfKLar21THibqM6Q/viewform" class="text-white bg-purple-400 hover:bg-purple-500 text-sm font-medium rounded-lg md:text-lg px-5 py-2 me-2 mb-2 ">¡Quiero unirme!</a>
-            <a href="/contacto/" class="text-white bg-purple-400 hover:bg-purple-500 text-sm font-medium rounded-lg md:text-lg px-5 py-2 me-2 mb-2 ">Contacto</a>
-        </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-2 lg:flex order-2 md:order-3">
-                <MiembroImg  imgLink = "/miembros/isa-miembro.webp"/>
-                <MiembroImg  imgLink = "/miembros/sofia-miembro.webp"/>
-                <div class="hidden lg:flex">
-                    <MiembroImg  imgLink = "/miembros/daniela-miembro.webp"/>
-                    <MiembroImg  imgLink = "/miembros/tatiana-miembro.webp"/>
-                    <MiembroImg  imgLink = "/miembros/nombre1-miembro.webp"/>
-                    <MiembroImg  imgLink = "/miembros/nombre2-miembro.webp"/>
+        <div class="flex order-2 md:order-2">
+            <div class="grid max-w-sm mx-auto items-center">
+                <img src= "/miembros/nombre4-miembro.webp" alt = "lilacdreamrs - miembro" class="hidden sm:block h-[100px] md:h-[100px] lg:h-[200px] object-cover rounded blur-sm hover:blur-none" />
+            </div>
+            
+            <div class="grid max-w-sm mx-auto items-center">
+                <img src= "/miembros/nombre1-miembro.webp" alt = "lilacdreamrs - miembro" class="hidden lg:block h-[100px] md:h-[100px] lg:h-[300px] object-cover rounded blur-sm hover:blur-none" />
+            </div>  
+
+            <div class="grid max-w-sm mx-auto items-center">
+                <img src= "/miembros/daniela-miembro.webp" alt = "lilacdreamrs - miembro" class="h-[200px] md:h-[200px] lg:h-[400px] object-cover rounded blur-sm hover:blur-none" />
+            </div>    
+
+            <div class="grid max-w-sm mx-auto items-center">
+                <img src= "/miembros/isa-miembro.webp" alt = "lilacdreamrs - miembro" class="h-[300px] md:h-[300px] lg:h-[500px] object-cover rounded" />
+            </div>   
+
+            <div class="max-w-sm mx-auto ">
+                <div class="grid items-center justify-center h-[300px] w-20 md:w-32 md:h-[300px] lg:h-[500px] lg:w-[130px]">
+                    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeJ0EbWeBrFwKSHB_o08n5cAuJvxaV3d4OfKLar21THibqM6Q/viewform" target="_blank" class=" md:text-3xl lg:text-4xl font-bold hover:underline">Unete!</a>
                 </div>
-                <MiembroImg  imgLink = "/miembros/nombre3-miembro.webp"/>
-                <MiembroImg  imgLink = "/miembros/nombre4-miembro.webp"/>
+            </div>   
+
+            <div class="grid max-w-sm mx-auto items-center">
+                <img src= "/miembros/sofia-miembro.webp" alt = "lilacdreamrs - miembro" class="h-[300px] md:h-[300px] lg:h-[500px] object-cover rounded" />
+            </div>   
+                     
+            <div class="grid max-w-sm mx-auto items-center">
+                <img src= "/miembros/tatiana-miembro.webp" alt = "lilacdreamrs - miembro" class="h-[200px] md:h-[200px] lg:h-[400px] object-cover rounded blur-sm hover:blur-none" />
+            </div>   
+
+            <div class="grid max-w-sm mx-auto items-center">
+                <img src= "/miembros/nombre2-miembro.webp" alt = "lilacdreamrs - miembro" class="hidden lg:block h-[100px] md:h-[100px] lg:h-[300px] object-cover rounded blur-sm hover:blur-none" />
+            </div>    
+
+            <div class="grid max-w-sm mx-auto items-center">
+                <img src= "/miembros/nombre3-miembro.webp" alt = "lilacdreamrs - miembro" class="hidden sm:block h-[100px] md:h-[100px] lg:h-[200px] object-cover rounded blur-sm hover:blur-none" />
+            </div>
         </div>
     </div>
 </Layout>
+
+<style>
+    img {
+        transition: 0.5s ease;
+        mask-image: linear-gradient(black 70%, transparent);
+    }
+
+    img:hover{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 1s ease;
+        z-index: 99;
+    }
+</style>

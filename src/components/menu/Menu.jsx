@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Menu({color = "text-white"}) {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,15 +23,7 @@ export default function Menu({color = "text-white"}) {
                     <div className='flex justify-between py-5 px-10 items-center'>
                         <h1 className='text-2xl md:text-3xl font-bold uppercase'><span className='text-purple-400'>lilac</span>dreamers</h1>
                         <button onClick={toggleMenu} className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600">
-                            <svg fill="#000000" className='h-16 w-16' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
-                                viewBox="0 0 460.775 460.775" xmlSpace="preserve">
-                                <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
-                                    c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
-                                    c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
-                                    c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
-                                    l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
-                                    c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"/>
-                            </svg>
+                        <svg width="64px" height="64px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="16" height="16" id="icon-bound" fill="none"></rect> <polygon points="14.707,2.707 13.293,1.293 8,6.586 2.707,1.293 1.293,2.707 6.586,8 1.293,13.293 2.707,14.707 8,9.414 13.293,14.707 14.707,13.293 9.414,8 "></polygon> </g></svg>
                         </button>
                     </div>
                     <div className='flex justify-center mt-36 md:mt-0 h-[80vh] mx-auto md:items-center'>
@@ -39,15 +32,14 @@ export default function Menu({color = "text-white"}) {
                             <a href="/miembros/" className='text-5xl font-bold tracking-tight animate-fade-down'>Miembros</a>
                             <a href="/galeria/" className='text-5xl font-bold tracking-tight animate-fade-down'>Galeria</a>
                             <a href="/unete/" className='text-5xl font-bold tracking-tight animate-fade-down'>Unete</a>
-                            <a href="/contacto/" className='text-5xl font-bold tracking-tight animate-fade-down'>Contacto</a>
                         </div>
 
                     </div>
-                    <div className='flex absolute flex-col align-bottom gap-y-3 justify-end mx-10 mb-5 bottom-1'>
-                            <a href=""><img src="/redes/instagram.svg" className='h-6 animate-fade-up animate-once' alt="" /></a>
-                            <a href=""><img src="/redes/instagram.svg" className='h-6 animate-fade-up animate-once' alt="" /></a>
-                            <a href=""><img src="/redes/instagram.svg" className='h-6 animate-fade-up animate-once' alt="" /></a>
-                            <a href=""><img src="/redes/instagram.svg" className='h-6 animate-fade-up animate-once' alt="" /></a>
+                    <div className='flex absolute flex-col align-bottom gap-y-3 justify-end items-center mx-10 mb-8 bottom-1'>
+                           <a target="_blank" href="https://www.instagram.com/lilacdreamerss/"><i className="fa-brands fa-instagram text-2xl animate-fade-up animate-once"></i></a>
+                           <a target="_blank" href="https://www.youtube.com/@lilacdreamers"><i className="fa-brands fa-youtube text-2xl animate-fade-up animate-once"></i></a>
+                           <a target="_blank" href="#"><i className="fa-brands fa-x-twitter text-2xl animate-fade-up animate-once"></i></a>
+                           <a target="_blank" href="https://github.com/jeantpdev"><i className="fa-brands fa-github text-2xl animate-fade-up animate-once"></i></a>
                     </div>
                 </div>
             )}
