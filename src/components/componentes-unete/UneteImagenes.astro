@@ -1,0 +1,48 @@
+---
+import { Image } from 'astro:assets';
+const { nombre, imgLink, size } = Astro.props;
+
+/* Funcionamiento de las imagenes
+    Se recibe en "size" el tamano que va a contener la clase de la imagen a mostrar para dar un efecto que la imagen centrada es la mas grande
+    y las de su lado, mas pequeñas.
+    tamaños (size):
+    small: La imagen es pequeña y borrosa
+    medium: La imagen es mediana y borrosa
+    big: La imagen es grande y borrosa
+    extra big: La imagen es bastante grande y no es borrosa 
+ */
+
+function comprobarTamano(size: string) {
+    const sizes = {
+        "small": "hidden sm:block h-[100px] md:h-[100px] lg:h-[200px] object-cover rounded blur-sm hover:blur-none",
+        "medium": "hidden lg:block h-[100px] md:h-[100px] lg:h-[300px] object-cover rounded blur-sm hover:blur-none",
+        "big": "h-[200px] md:h-[200px] lg:h-[400px] object-cover rounded blur-sm hover:blur-none",
+        "extra big": "h-[300px] md:h-[300px] lg:h-[500px] object-cover rounded"
+    };
+
+    return sizes[size];
+}
+
+const tamano = comprobarTamano(size)
+
+---
+
+<div class="grid max-w-sm mx-auto items-center">
+    <Image src= {imgLink} alt = `lilacdreamrs - miembro ${nombre}` class = {tamano} />
+</div>  
+
+
+<style>
+    img {
+        transition: 0.5s ease;
+        mask-image: linear-gradient(black 70%, transparent);
+    }
+
+    img:hover{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 1s ease;
+        z-index: 99;
+    }
+</style>
