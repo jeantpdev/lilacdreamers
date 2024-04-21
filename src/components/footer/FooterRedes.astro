@@ -5,10 +5,10 @@ const currentPage = Astro.url.pathname
 ---
 
 <div class={`flex fixed flex-col align-bottom gap-y-3 justify-end items-center mx-10 mb-5 bottom-1 ${currentPage === "/" ? "flex" : "hidden sm:flex"}`}>
-    <a target="_blank" href="https://www.instagram.com/lilacdreamerss/"><i class=`${color} text-2xl fa-brands fa-instagram`></i></a>
-    <a target="_blank" href="https://www.youtube.com/@lilacdreamers"><i class=`${color} text-2xl fa-brands fa-youtube`></i></a>
-    <a target="_blank" href="#"><i class=`${color} text-2xl fa-brands fa-x-twitter`></i></a>
-    <a target="_blank" href="https://github.com/jeantpdev"><i class=`${color} text-2xl fa-brands fa-github`></i></a>
+    <a aria-label="Visitar el canal de YouTube de Lilac Dreamers" target="_blank" href="https://www.instagram.com/lilacdreamerss/"><i class=`${color} text-2xl fa-brands fa-instagram`></i></a>
+    <a aria-label="Visitar el perfil de Instagram de Lilac Dreamers" target="_blank" href="https://www.youtube.com/@lilacdreamers"><i class=`${color} text-2xl fa-brands fa-youtube`></i></a>
+    <a aria-label="Visitar el perfil de Twitter de Lilac Dreamers" target="_blank" href="#"><i class=`${color} text-2xl fa-brands fa-x-twitter`></i></a>
+    <a aria-label="Visitar el perfil del desarrollador Jean Trujillo en Github" target="_blank" href="https://github.com/jeantpdev"><i class=`${color} text-2xl fa-brands fa-github`></i></a>
 </div>
 
  <script src = "https://kit.fontawesome.com/1a5bcd4a97.js" crossorigin="anonymous" is:inline data-astro-rerun></script>
