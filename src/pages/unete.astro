@@ -1,6 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import MiembroImg from '@/components/componentes-unete/imagen-miembro.astro';
+import { Image } from 'astro:assets';
+
+import daniela from '../assets/miembros/daniela-miembro.webp';
+import isa from '../assets/miembros/isa-miembro.webp';
+import nombre1 from '../assets/miembros/nombre1-miembro.webp';
+import nombre2 from '../assets/miembros/nombre2-miembro.webp';
+import nombre3 from '../assets/miembros/nombre3-miembro.webp';
+import nombre4 from '../assets/miembros/nombre4-miembro.webp';
+import nombre5 from '../assets/miembros/nombre5-miembro.webp';
+import sofia from '../assets/miembros/sofia-miembro.webp';
+import tatiana from '../assets/miembros/tatiana-miembro.webp';
 
 const title = "Unete"
 ---
@@ -17,36 +27,35 @@ const title = "Unete"
 
         <div class="flex order-2 md:order-2">
             <div class="grid max-w-sm mx-auto items-center">
-                <img src= "/miembros/nombre4-miembro.webp" alt = "lilacdreamrs - miembro" class="hidden sm:block h-[100px] md:h-[100px] lg:h-[200px] object-cover rounded blur-sm hover:blur-none" />
+                <Image src= {nombre4} alt = "lilacdreamrs - nombre4 miembro" class="hidden sm:block h-[100px] md:h-[100px] lg:h-[200px] object-cover rounded blur-sm hover:blur-none" />
             </div>
             
             <div class="grid max-w-sm mx-auto items-center">
-                <img src= "/miembros/nombre1-miembro.webp" alt = "lilacdreamrs - miembro" class="hidden lg:block h-[100px] md:h-[100px] lg:h-[300px] object-cover rounded blur-sm hover:blur-none" />
+                <Image src= {nombre1} alt = "lilacdreamrs - nombre1 miembro" class="hidden lg:block h-[100px] md:h-[100px] lg:h-[300px] object-cover rounded blur-sm hover:blur-none" />
             </div>  
 
             <div class="grid max-w-sm mx-auto items-center">
-                <img src= "/miembros/daniela-miembro.webp" alt = "lilacdreamrs - miembro" class="h-[200px] md:h-[200px] lg:h-[400px] object-cover rounded blur-sm hover:blur-none" />
+                <Image src= {daniela} alt = "lilacdreamrs - Daniela miembro" class="h-[200px] md:h-[200px] lg:h-[400px] object-cover rounded blur-sm hover:blur-none" />
             </div>    
 
             <div class="grid max-w-sm mx-auto items-center">
-                <img src= "/miembros/isa-miembro.webp" alt = "lilacdreamrs - miembro" class="h-[300px] md:h-[300px] lg:h-[500px] object-cover rounded" />
+                <Image src= {isa} alt = "lilacdreamrs - Isabella miembro" class="h-[300px] md:h-[300px] lg:h-[500px] object-cover rounded" />
             </div>   
 
-
             <div class="grid max-w-sm mx-auto items-center">
-                <img src= "/miembros/sofia-miembro.webp" alt = "lilacdreamrs - miembro" class="h-[300px] md:h-[300px] lg:h-[500px] object-cover rounded" />
+                <Image src= {sofia} alt = "lilacdreamrs - Sofia miembro" class="h-[300px] md:h-[300px] lg:h-[500px] object-cover rounded" />
             </div>   
                      
             <div class="grid max-w-sm mx-auto items-center">
-                <img src= "/miembros/tatiana-miembro.webp" alt = "lilacdreamrs - miembro" class="h-[200px] md:h-[200px] lg:h-[400px] object-cover rounded blur-sm hover:blur-none" />
+                <Image src= {tatiana} alt = "lilacdreamrs - Tatiana miembro" class="h-[200px] md:h-[200px] lg:h-[400px] object-cover rounded blur-sm hover:blur-none" />
             </div>   
 
             <div class="grid max-w-sm mx-auto items-center">
-                <img src= "/miembros/nombre2-miembro.webp" alt = "lilacdreamrs - miembro" class="hidden lg:block h-[100px] md:h-[100px] lg:h-[300px] object-cover rounded blur-sm hover:blur-none" />
+                <Image src= {nombre2} alt = "lilacdreamrs - Nombre2 miembro" class="hidden lg:block h-[100px] md:h-[100px] lg:h-[300px] object-cover rounded blur-sm hover:blur-none" />
             </div>    
 
             <div class="grid max-w-sm mx-auto items-center">
-                <img src= "/miembros/nombre3-miembro.webp" alt = "lilacdreamrs - miembro" class="hidden sm:block h-[100px] md:h-[100px] lg:h-[200px] object-cover rounded blur-sm hover:blur-none" />
+                <Image src= {nombre3} alt = "lilacdreamrs - Nombre3 miembro" class="hidden sm:block h-[100px] md:h-[100px] lg:h-[200px] object-cover rounded blur-sm hover:blur-none" />
             </div>
         </div>
     </div>

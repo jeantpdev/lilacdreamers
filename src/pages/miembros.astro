@@ -1,6 +1,15 @@
 ---
 import MiembroImg from '../components/componentes-miembros/miembro-img.astro';
 import Layout from '../layouts/Layout.astro';
+import daniela from '../assets/miembros/daniela-miembro.webp';
+import isa from '../assets/miembros/isa-miembro.webp';
+import nombre1 from '../assets/miembros/nombre1-miembro.webp';
+import nombre2 from '../assets/miembros/nombre2-miembro.webp';
+import nombre3 from '../assets/miembros/nombre3-miembro.webp';
+import nombre4 from '../assets/miembros/nombre4-miembro.webp';
+import nombre5 from '../assets/miembros/nombre5-miembro.webp';
+import sofia from '../assets/miembros/sofia-miembro.webp';
+import tatiana from '../assets/miembros/tatiana-miembro.webp';
 
 const title = "Miembros"
 ---
@@ -12,14 +21,14 @@ const title = "Miembros"
         </div>
 
         <div class="grid px-10 gap-5 justify-center items-center md:grid-cols-2 md:px-28 lg:grid-cols-4 lg:px-20" transition:animate="fade">
-            <MiembroImg nombre = "Isabella" imgLink = "/miembros/isa-miembro.webp"/>
-            <MiembroImg nombre = "Sofia" imgLink = "/miembros/sofia-miembro.webp"/>
-            <MiembroImg nombre = "Daniela" imgLink = "/miembros/daniela-miembro.webp"/>
-            <MiembroImg nombre = "Tatiana" imgLink = "/miembros/tatiana-miembro.webp"/>
-            <MiembroImg nombre = "nombre1" imgLink = "/miembros/nombre1-miembro.webp"/>
-            <MiembroImg nombre = "nombre2" imgLink = "/miembros/nombre2-miembro.webp"/>
-            <MiembroImg nombre = "nombre3" imgLink = "/miembros/nombre3-miembro.webp"/>
-            <MiembroImg nombre = "nombre4" imgLink = "/miembros/nombre4-miembro.webp"/>
+            <MiembroImg nombre = "Isabella" imgLink = {isa}/>
+            <MiembroImg nombre = "Sofia" imgLink = {sofia}/>
+            <MiembroImg nombre = "Daniela" imgLink = {daniela}/>
+            <MiembroImg nombre = "Tatiana" imgLink = {tatiana}/>
+            <MiembroImg nombre = "nombre1" imgLink = {nombre1}/>
+            <MiembroImg nombre = "nombre2" imgLink = {nombre2}/>
+            <MiembroImg nombre = "nombre3" imgLink = {nombre3}/>
+            <MiembroImg nombre = "nombre4" imgLink = {nombre4}/>
         </div>
 
     </div>

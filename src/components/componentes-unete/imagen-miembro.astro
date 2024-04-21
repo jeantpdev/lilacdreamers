@@ -1,9 +1,10 @@
 ---
+import { Image } from 'astro:assets';
 const { imgLink } = Astro.props
 ---
 
 <div class="max-w-sm mx-auto">
-    <img src= {imgLink} alt = "lilacdreamrs - miembro" class="h-[200px] md:h-[300px] lg:h-[500px] object-cover rounded" />
+    <Image src= {imgLink} alt = "lilacdreamrs - miembro" class="h-[200px] md:h-[300px] lg:h-[500px] object-cover rounded" />
 </div>
 
 <style>
