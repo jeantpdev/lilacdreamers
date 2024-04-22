@@ -1,0 +1,30 @@
+[
+    {
+      "nombre": "Isabella",
+      "rol": "Bailarina",
+      "instagram": "",
+      "imagen_principal": "/assets/miembros/isa-miembro.wepb",
+      "imagenes_secundarias": ""
+    },
+      {
+      "nombre": "Sofia",
+      "rol": "Bailarina",
+      "instagram": "",
+      "imagen_principal": "/assets/miembros/sofia-miembro.wepb",
+      "imagenes_secundarias": ""
+    },
+      {
+      "nombre": "Daniela",
+      "rol": "Bailarina",
+      "instagram": "",
+      "imagen_principal": "/assets/miembros/daniela-miembro.wepb",
+      "imagenes_secundarias": ""
+    },
+      {
+      "nombre": "Tatiana",
+      "rol": "Bailarina",
+      "instagram": "",
+      "imagen_principal": "/assets/miembros/tatiana-miembro.wepb",
+      "imagenes_secundarias": ""
+    }
+  ]
