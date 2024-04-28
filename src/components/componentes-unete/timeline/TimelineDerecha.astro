@@ -1,0 +1,23 @@
+---
+const { numero, titulo, descripcion, link } = Astro.props;
+---
+
+<div class="mb-8 flex flex-col space-y-5 md:flex-row justify-between md:space-y-0 items-center w-full right-timeline">
+    <div class="order-1 md:w-5/12"></div>
+    <div class="flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+        <h1 class="mx-auto font-semibold text-lg text-white">{numero}</h1>
+    </div>
+    <div class="order-1 bg-purple-500 rounded-lg shadow-xl md:w-5/12 px-6 py-4">
+        <h3 class="mb-3 font-bold text-white text-xl">{titulo}</h3>
+        <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">{descripcion}</p>
+        <div class="mt-5 text-end">
+            {link
+                ?
+                <a aria-label="Llenar el formulario para ser parte de Lilacdreamers" href="https://docs.google.com/forms/d/e/1FAIpQLSeJ0EbWeBrFwKSHB_o08n5cAuJvxaV3d4OfKLar21THibqM6Q/viewform" target="_blank" class="text-md font-semibold py-1 px-3 bg-zinc-800 hover:bg-purple-600 rounded-lg text-white">Formulario</a>
+                :
+                ""
+                }
+        </div>
+        
+    </div>
+</div>

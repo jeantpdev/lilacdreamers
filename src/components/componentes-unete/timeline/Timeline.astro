@@ -1,0 +1,28 @@
+---
+import TimeLineIzquierda from "./TimeLineIzquierda.astro"
+import TimelineDerecha from "./TimelineDerecha.astro"
+---
+<div class="container">
+    <div class="relative wrap overflow-hidden md:py-10 h-full">
+    <div class="hidden md:block border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+
+    <TimeLineIzquierda
+        numero = "1"
+        titulo = "APLICACION" 
+        descripcion = "Deberás llenar todos los datos que se piden en el siguiente formulario" 
+        link = "https://docs.google.com/forms/d/e/1FAIpQLSeJ0EbWeBrFwKSHB_o08n5cAuJvxaV3d4OfKLar21THibqM6Q/viewform"/>
+
+    <TimelineDerecha 
+        numero = "2"
+        titulo = "CONFIRMACION DE PROCESO" 
+        descripcion = "Espera un correo/mensaje del proceso de tu aplicación."/>
+
+    <TimeLineIzquierda 
+        numero = "3"
+        titulo = "AUDICION PRESENCIAL" 
+        descripcion = "Se enviara la cita previa de su audición, se recomienda asistir con 10 minutos de anticipación."/>
+    
+    </div>
+</div>
+
+<h2 class="mb-5 font-bold text-white text-4xl text-center">A bailar!</h2>

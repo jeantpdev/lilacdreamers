@@ -1,40 +1,41 @@
 ---
-import Layout from '../layouts/Layout.astro';
-
-import UneteImagenes from '@/components/componentes-unete/UneteImagenes.astro';
-
 import daniela from '../assets/miembros/daniela.webp';
 import isa from '../assets/miembros/isa.webp';
-import nombre1 from '../assets/miembros/nombre1.webp';
-import nombre2 from '../assets/miembros/nombre2.webp';
-import nombre3 from '../assets/miembros/nombre3.webp';
-import nombre4 from '../assets/miembros/nombre4.webp';
-import nombre5 from '../assets/miembros/nombre5.webp';
+import rocio from '../assets/miembros/rocio.webp';
+import shael from '../assets/miembros/shael.webp';
+import sheila from '../assets/miembros/sheila.webp';
+import marina from '../assets/miembros/marina.webp';
 import sofia from '../assets/miembros/sofia.webp';
 import tatiana from '../assets/miembros/tatiana.webp';
+
+import Layout from '../layouts/Layout.astro';
+import UneteImagenes from '@/components/componentes-unete/UneteImagenes.astro';
+import Timeline from '@/components/componentes-unete/timeline/Timeline.astro';
 
 const title = "Unete"
 ---
 
 <Layout title = {title} textColor = "text-white" bgColor="bg-zinc-900">
-    <div class="max-w-7xl mx-auto grid text-purple-400 space-y-5 px-10 md:px-20 lg:px-20">
-        <div class="my-5 text-center order-1 md:order-1 space-y-5">
+    <div class="max-w-7xl mx-auto grid text-purple-400  px-10 md:px-20 lg:px-20">
+
+        <div class="text-center space-y-10 mb-5">
             <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold text-white"><span class="text-purple-400">LILAC</span>DREAMERS</h2>
-            <div>
-                <a aria-label="Llenar el formulario para ser parte de Lilacdreamers" href = "https://docs.google.com/forms/d/e/1FAIpQLSeJ0EbWeBrFwKSHB_o08n5cAuJvxaV3d4OfKLar21THibqM6Q/viewform" target="_blank" class="md:text-3xl lg:text-2xl font-bold py-1 px-3 bg-purple-500 hover:bg-purple-600 rounded-lg text-white">Unete!</a>
-            </div>
+            <h2 class="text-xl md:text-xl lg:text-3xl font-bold text-white"><span class="">PROCESO DE APLICACION</h2>
         </div>
 
+        <!-- component -->
+        <Timeline />
+
         <!-- Imagenes de las miembros -->
-        <div class="flex order-2 md:order-2">
-            <UneteImagenes nombre = "nombre4" imgLink = {nombre4} size = "small"/>
-            <UneteImagenes nombre = "nombre1" imgLink = {nombre1} size = "medium"/>
+        <div class="flex">
+            <UneteImagenes nombre = "marina" imgLink = {marina} size = "small"/>
+            <UneteImagenes nombre = "rocio" imgLink = {rocio} size = "medium"/>
             <UneteImagenes nombre = "Daniela" imgLink = {daniela} size = "big"/>
             <UneteImagenes nombre = "Isabella" imgLink = {isa} size = "extra big"/>
             <UneteImagenes nombre = "Sofia" imgLink = {sofia} size = "extra big"/>
             <UneteImagenes nombre = "Tatiana" imgLink = {tatiana} size = "big"/>
-            <UneteImagenes nombre = "nombre2" imgLink = {nombre2} size = "medium"/>
-            <UneteImagenes nombre = "nombre3" imgLink = {nombre3} size = "small"/>
+            <UneteImagenes nombre = "shael" imgLink = {shael} size = "medium"/>
+            <UneteImagenes nombre = "sheila" imgLink = {sheila} size = "small"/>
         </div>
 
     </div>
