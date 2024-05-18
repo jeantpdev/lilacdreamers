@@ -1,14 +1,5 @@
 ---
-
-import daniela from '../assets/miembros/daniela.webp';
-import isa from '../assets/miembros/isa.webp';
-import rocio from '../assets/miembros/rocio.webp';
-import shael from '../assets/miembros/shael.webp';
-import sheila from '../assets/miembros/sheila.webp';
-import marina from '../assets/miembros/marina.webp';
-import sofia from '../assets/miembros/sofia.webp';
-import tatiana from '../assets/miembros/tatiana.webp';
-
+import miembros from '@/data/miembros.json';
 import MiembroImg from '../components/componentes-miembros/miembro-img.astro';
 import Layout from '../layouts/Layout.astro';
 const title = "Miembros"
@@ -21,14 +12,12 @@ const title = "Miembros"
         </div>
 
         <div class="grid px-10 gap-5 justify-center items-center md:grid-cols-2 md:px-28 lg:grid-cols-4 lg:px-20" transition:animate="fade">
-            <MiembroImg nombre = "Isabella" imgLink = {isa}/>
-            <MiembroImg nombre = "Sofia" imgLink = {sofia}/>
-            <MiembroImg nombre = "Daniela" imgLink = {daniela}/>
-            <MiembroImg nombre = "Tatiana" imgLink = {tatiana}/>
-            <MiembroImg nombre = "Rocio" imgLink = {rocio}/>
-            <MiembroImg nombre = "Shael" imgLink = {shael}/>
-            <MiembroImg nombre = "Sheila" imgLink = {sheila}/>
-            <MiembroImg nombre = "Marina" imgLink = {marina}/>
+            {miembros.map((miembro) => {
+                return (
+                    <MiembroImg nombre = {miembro.nombre} imgLink = {miembro.imagen} />
+                );
+              })
+        }
         </div>
 
     </div>

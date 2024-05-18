@@ -1,12 +1,12 @@
 {
     "imagenes": [
-        "/asets/galeria/imagen-1.webp",
-        "/asets/galeria/imagen-2.webp",
-        "/asets/galeria/imagen-3.webp",
-        "/asets/galeria/imagen-4.webp",
-        "/asets/galeria/imagen-5.webp",
-        "/asets/galeria/imagen-6.webp",
-        "/asets/galeria/imagen-7.webp",
-        "/asets/galeria/imagen-7.webp"
+        "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/zluqavgqhp5otxph09g1",
+        "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/d7vbe4ljrcubdffp1vkr",
+        "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/gstiqbz6fx06q8dqalyf",
+        "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/l9eh6llo5a7mb73c50f5",
+        "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/skju4zm0t6pgeekmm4fy",
+        "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/ka7ho53lqeybuumwu0m2",
+        "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/zzup3wadzfqeqvbrhlrj",
+        "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/loxjvwmdgiyb9eoroihu"
     ]
 }

@@ -1,30 +1,35 @@
 [
     {
       "nombre": "Isabella",
-      "rol": "Bailarina",
-      "instagram": "",
-      "imagen_principal": "/assets/miembros/isa-miembro.wepb",
-      "imagenes_secundarias": ""
+      "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/tdnj81wudnjku0knrgut"
     },
       {
       "nombre": "Sofia",
-      "rol": "Bailarina",
-      "instagram": "",
-      "imagen_principal": "/assets/miembros/sofia-miembro.wepb",
-      "imagenes_secundarias": ""
+      "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/vnytzyrwi3wtgkixbh68"
     },
       {
       "nombre": "Daniela",
-      "rol": "Bailarina",
-      "instagram": "",
-      "imagen_principal": "/assets/miembros/daniela-miembro.wepb",
-      "imagenes_secundarias": ""
+      "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/tphp0iey25qnaeuwcsbr"
     },
       {
       "nombre": "Tatiana",
-      "rol": "Bailarina",
-      "instagram": "",
-      "imagen_principal": "/assets/miembros/tatiana-miembro.wepb",
-      "imagenes_secundarias": ""
+      "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/qrxponudthyiimp6zwti"
+    },
+    {
+      "nombre": "Sheila",
+      "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/ducnje4zngmxjzjcw801"
+    },
+    {
+      "nombre": "Shael",
+      "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/oy9pprtdcdujvn3w9xeh"
+    },
+    {
+      "nombre": "Marina",
+      "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/wyzfc6bvnq79h1kzcaub"
+    },
+    {
+      "nombre": "Rocio",
+      "imagen": "https://res.cloudinary.com/dkuw4zg2h/image/upload/f_auto,q_auto/g3kgizrmcg8qygxvofnd"
     }
+    
   ]

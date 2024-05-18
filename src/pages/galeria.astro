@@ -1,17 +1,7 @@
 ---
-import ImagenGaleria from '@/components/componentes-galeria/imagen-galeria.astro';
-
-import imagen1 from '../assets/galeria/imagen-1.webp';
-import imagen2 from '../assets/galeria/imagen-2.webp';
-import imagen3 from '../assets/galeria/imagen-3.webp';
-import imagen4 from '../assets/galeria/imagen-4.webp';
-import imagen5 from '../assets/galeria/imagen-5.webp';
-import imagen6 from '../assets/galeria/imagen-6.webp';
-import imagen7 from '../assets/galeria/imagen-7.webp';
-import imagen8 from '../assets/galeria/imagen-8.webp';
-
 import Layout from '../layouts/Layout.astro';
-
+import ImagenGaleria from '@/components/componentes-galeria/imagen-galeria.astro';
+import galeria_imagenes from '@/data/galeria_imagenes.json';
 const title = "Galeria"
 ---
 
@@ -23,14 +13,12 @@ const title = "Galeria"
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
-        <ImagenGaleria imgLink = { imagen1 } alt="lilacdreamers-imagen-galeria" />
-        <ImagenGaleria imgLink = { imagen2 } alt="lilacdreamers-imagen-galeria" />
-        <ImagenGaleria imgLink = { imagen3 } alt="lilacdreamers-imagen-galeria" />
-        <ImagenGaleria imgLink = { imagen4 } alt="lilacdreamers-imagen-galeria" />
-        <ImagenGaleria imgLink = { imagen5 } alt="lilacdreamers-imagen-galeria" />
-        <ImagenGaleria imgLink = { imagen6 } alt="lilacdreamers-imagen-galeria" />
-        <ImagenGaleria imgLink = { imagen7 } alt="lilacdreamers-imagen-galeria" />
-        <ImagenGaleria imgLink = { imagen8 } alt="lilacdreamers-imagen-galeria" />
+        {galeria_imagenes.imagenes.map((imagen) => {
+            return (
+            <ImagenGaleria imgLink = { imagen } alt="lilacdreamers-imagen-galeria" />
+            );
+          })
+        }
         
     </div>
 </div>
