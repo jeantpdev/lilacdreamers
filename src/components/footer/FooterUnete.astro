@@ -1,0 +1,11 @@
+---
+const { color = "text-white" } = Astro.props;
+const currentPage = Astro.url.pathname
+---
+
+<div class={`flex fixed flex-col w-20 text-center md:w-auto align-bottom gap-y-3 justify-end items-center mx-10 mb-5 bottom-1 right-0 ${currentPage === "/" ? "flex" : "hidden sm:flex"}`}>
+    <p class="text-white  text-sm">¿Quieres unirte? Sé parte de <span class="font-semibold">LILAC<span class="text-purple-400">DREAMERS</span> <a href="/unete" class="underline"> Haz click aca!</a></span> </p>
+</div>
+
+ <script src = "https://kit.fontawesome.com/1a5bcd4a97.js" crossorigin="anonymous" is:inline data-astro-rerun></script>
+

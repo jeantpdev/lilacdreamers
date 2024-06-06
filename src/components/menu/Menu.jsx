@@ -31,7 +31,7 @@ export default function Menu({color = "text-white"}) {
                             <a href="/" className='text-5xl font-bold tracking-tight animate-fade-down'>Inicio</a>
                             <a href="/miembros/" className='text-5xl font-bold tracking-tight animate-fade-down'>Miembros</a>
                             <a href="/galeria/" className='text-5xl font-bold tracking-tight animate-fade-down'>Galeria</a>
-                            <a href="/unete/" className='text-5xl font-bold tracking-tight animate-fade-down'>Unete</a>
+                            <a href="/unete/" className='text-5xl font-bold tracking-tight animate-fade-down'>Unete <span className = "text-sm tracking-wide text-emerald-400" >abiertas</span></a>
                             <a href="/contacto/" className='text-5xl font-bold tracking-tight animate-fade-down'>Contacto</a>
                         </div>
 
