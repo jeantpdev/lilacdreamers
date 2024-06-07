@@ -5,9 +5,6 @@ const currentPage = Astro.url.pathname
 import redes from '@/data/redes.json';
 
 const keys = Object.keys(redes)
-
-console.log(keys)
-
 ---
 
 <div class={`flex fixed flex-col align-bottom gap-y-3 justify-end items-center mx-10 mb-5 bottom-1 ${currentPage === "/" ? "flex" : "hidden sm:flex"}`}>
